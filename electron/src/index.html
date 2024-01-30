@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+  <title>Test</title>
+</head>
+<body>
+  <header>
+    <div class="header continer">
+      <div class="logo">
+        <a href="#">
+          <img class="logo-img" src="./img/pero.png" alt="">
+        </a>       
+      </div>
+      <nav class="header__nav">
+        <ul class="nav-list">
+            <li class="nav-item activ" onclick="openFile(1)">
+                <a href="#" class="nav-link">Подготовка</a>
+            </li>
+            <li class="nav-item" onclick="openFile(2)">
+                <a href="#" class="nav-link">Экзамен</a>
+            </li>
+            <li class="nav-item" onclick="openFile(3)">
+                <a href="#" class="nav-link">Билеты</a>
+            </li>
+            <li class="nav-item" onclick="openFile(4)">
+                <a href="#" class="nav-link">Сотрудники</a>
+            </li>
+        </ul>
+    </nav>
+    </div>
+   
+  </header>
+  <main class="main continer">
+    <h1 class="title">Программный комплекс обучения и проверки знаний работников по вопросам охраны труда</h1>
+  </main>
+  <footer>
+    <div class="footer continer">
+      <div>Минск</div>
+      <div>Информационно-расчётный центр РУП "Белтелеком"</div>
+      
+    </div>
+  </footer>
+  <script>
+    const openFile = (number) => {
+      window.electron.openFile(number);      
+    }    
+  </script>
+</body>
+</html>
